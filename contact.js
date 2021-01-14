@@ -32,7 +32,7 @@ contactForm.addEventListener('submit', function(event) {
 
   swal("Nice!", "Your inquiry is submitted!", "success");
 
-  setTimeout("location.href = 'contact.html';",1700);
+  // setTimeout("location.href = 'contact.html';",1700);
 
 });
 
