@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DDB | Design-Decor-Building</title>
+
+    <!--Icon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.svg">
+
+    <!--Styling-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="Preloader">
+        <img src="images/preloader.svg" alt="Loading...">
+    </div>
+
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="flex">
+
+            <div class="Logo-Section flex">
+
+                <a href="index.html" class="flex"><img src="images/logo.jpg" alt="Logo"></a>
+                <img class="Logo-Text" src="images/logo_text.jpg" alt="Design-Decor-Building">
+                <h1 style="display: none;">Design-Decor-Building</h1>
+
+            </div>
+
+            <div class="Nav-Menu flex">
+
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </nav>
+
+        <main>
+
+            <!-- Portfolio - Interior Design -->
+
+            <section class="Portfolio-Section">
+
+                <h2>Portfolio - Interior Design</h2>
+
+                <div class="Portfolio-Container">
+
+                    <ul class="filter-menu">
+                        <li data-target="all" class="current">All</li>
+                        <li data-target="commercial">Commercial</li>
+                        <li data-target="residential">Residential</li>
+                    </ul>
+
+                    <ul class="filter-item">
+
+                        <li data-item="commercial">
+                            <div class="Project-Card">
+                                <img src="images/projects/commercial/p_c_1_1.jpg" alt="Commercial Project #1">
+                                <div class="Partition-Line"></div>
+                                <h6>Commercial Project #1</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="residential">
+                            <div class="Project-Card">
+                                <img src="images/projects/residential/p_r_1_1.jpg" alt="Residential Project #1">
+                                <div class="Partition-Line"></div>
+                                <h6>Residential Project #1</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="commercial">
+                            <div class="Project-Card">
+                                <img src="images/projects/commercial/p_c_2_1.jpg" alt="Commercial Project #2">
+                                <div class="Partition-Line"></div>
+                                <h6>Commercial Project #2</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="residential">
+                            <div class="Project-Card">
+                                <img src="images/projects/residential/p_r_2_1.jpg" alt="Residential Project #2">
+                                <div class="Partition-Line"></div>
+                                <h6>Residential Project #2</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="commercial">
+                            <div class="Project-Card">
+                                <img src="images/projects/commercial/p_c_3_1.jpg" alt="Commercial Project #3">
+                                <div class="Partition-Line"></div>
+                                <h6>Commercial Project #3</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="residential">
+                            <div class="Project-Card">
+                                <img src="images/projects/residential/p_r_3_1.jpg" alt="Residential Project #3">
+                                <div class="Partition-Line"></div>
+                                <h6>Residential Project #3</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="commercial">
+                            <div class="Project-Card">
+                                <img src="images/projects/commercial/p_c_4_1.jpg" alt="Commercial Project #4">
+                                <div class="Partition-Line"></div>
+                                <h6>Commercial Project #4</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="residential">
+                            <div class="Project-Card">
+                                <img src="images/projects/residential/p_r_4_1.jpg" alt="Residential Project #4">
+                                <div class="Partition-Line"></div>
+                                <h6>Residential Project #4</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="commercial">
+                            <div class="Project-Card">
+                                <img src="images/projects/commercial/p_c_5_1.jpg" alt="Commercial Project #5">
+                                <div class="Partition-Line"></div>
+                                <h6>Commercial Project #5</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="residential">
+                            <div class="Project-Card">
+                                <img src="images/projects/residential/p_r_5_1.jpg" alt="Residential Project #5">
+                                <div class="Partition-Line"></div>
+                                <h6>Residential Project #5</h6>
+                            </div>
+                        </li>
+
+                        <li data-item="commercial">
+                            <div class="Project-Card">
+                                <img src="images/projects/commercial/p_c_6_1.jpg" alt="Commercial Project #6">
+                                <div class="Partition-Line"></div>
+                                <h6>Commercial Project #6</h6>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Project Images on Click -->
+
+                <div class="Portfolio-Modal">
+
+                    <span class="Portfolio-Modal-Close">&times;</span>
+
+                    <div class="Portfolio-Modal-Content">
+
+                        <div class="FP-Nav FP-Nav-Left" onclick="plusSlides(-1)">
+                            <img class="FP-Carousel-Icon" src="images/icon_prev.svg" alt="Previous Icon">
+                        </div>
+
+                        <!-- Commercial Project #1 -->
+
+                        <div class="Portfolio-Modal-Project Project Project0">
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_1.jpg"
+                                    alt="Commercial Project #1 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_2.jpg"
+                                    alt="Commercial Project #1 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_3.jpg"
+                                    alt="Commercial Project #1 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_4.jpg"
+                                    alt="Commercial Project #1 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_5.jpg"
+                                    alt="Commercial Project #1 - Image #5">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_6.jpg"
+                                    alt="Commercial Project #1 - Image #6">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_7.jpg"
+                                    alt="Commercial Project #1 - Image #7">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_8.jpg"
+                                    alt="Commercial Project #1 - Image #8">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_9.jpg"
+                                    alt="Commercial Project #1 - Image #9">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_1_10.jpg"
+                                    alt="Commercial Project #1 - Image #10">
+                            </div>
+
+                        </div>
+
+                        <!-- Residential Project #1 -->
+
+                        <div class="Portfolio-Modal-Project Project Project1">
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_1_1.jpg"
+                                    alt="Residential Project #1 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_1_2.jpg"
+                                    alt="Residential Project #1 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_1_3.jpg"
+                                    alt="Residential Project #1 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_1_4.jpg"
+                                    alt="Residential Project #1 - Image #4">
+                            </div>
+
+                        </div>
+
+                        <!-- Commercial Project #2 -->
+
+                        <div class="Portfolio-Modal-Project Project Project2">
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_1.jpg"
+                                    alt="Commercial Project #2 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_2.jpg"
+                                    alt="Commercial Project #2 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_3.jpg"
+                                    alt="Commercial Project #2 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_4.jpg"
+                                    alt="Commercial Project #2 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_5.jpg"
+                                    alt="Commercial Project #2 - Image #5">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_6.jpg"
+                                    alt="Commercial Project #2 - Image #6">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_7.jpg"
+                                    alt="Commercial Project #2 - Image #7">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_8.jpg"
+                                    alt="Commercial Project #2 - Image #8">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_9.jpg"
+                                    alt="Commercial Project #2 - Image #9">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_10.jpg"
+                                    alt="Commercial Project #2 - Image #10">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_11.jpg"
+                                    alt="Commercial Project #2 - Image #11">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_2_12.jpg"
+                                    alt="Commercial Project #2 - Image #12">
+                            </div>
+
+                        </div>
+
+                        <!-- Residential Project #2 -->
+
+                        <div class="Portfolio-Modal-Project Project Project3">
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_2_1.jpg"
+                                    alt="Residential Project #2 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_2_2.jpg"
+                                    alt="Residential Project #2 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_2_3.jpg"
+                                    alt="Residential Project #2 - Image #3">
+                            </div>
+
+                        </div>
+
+                        <!-- Commercial Project #3 -->
+
+                        <div class="Portfolio-Modal-Project Project Project4">
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_1.jpg"
+                                    alt="Commercial Project #3 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_2.jpg"
+                                    alt="Commercial Project #3 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_3.jpg"
+                                    alt="Commercial Project #3 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_4.jpg"
+                                    alt="Commercial Project #3 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_5.jpg"
+                                    alt="Commercial Project #3 - Image #5">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_6.jpg"
+                                    alt="Commercial Project #3 - Image #6">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_3_7.jpg"
+                                    alt="Commercial Project #3 - Image #7">
+                            </div>
+
+                        </div>
+
+                        <!-- Residential Project #3 -->
+
+                        <div class="Portfolio-Modal-Project Project Project5">
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_1.jpg"
+                                    alt="Residential Project #3 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_2.jpg"
+                                    alt="Residential Project #3 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_3.jpg"
+                                    alt="Residential Project #3 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_4.jpg"
+                                    alt="Residential Project #3 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_5.jpg"
+                                    alt="Residential Project #3 - Image #5">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_6.jpg"
+                                    alt="Residential Project #3 - Image #6">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_7.jpg"
+                                    alt="Residential Project #3 - Image #7">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_8.jpg"
+                                    alt="Residential Project #3 - Image #8">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_9.jpg"
+                                    alt="Residential Project #3 - Image #9">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_10.jpg"
+                                    alt="Residential Project #3 - Image #10">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_11.jpg"
+                                    alt="Residential Project #3 - Image #11">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_12.jpg"
+                                    alt="Residential Project #3 - Image #12">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_13.jpg"
+                                    alt="Residential Project #3 - Image #13">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_14.jpg"
+                                    alt="Residential Project #3 - Image #14">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_3_15.jpg"
+                                    alt="Residential Project #3 - Image #15">
+                            </div>
+
+                        </div>
+
+                        <!-- Commercial Project #4 -->
+
+                        <div class="Portfolio-Modal-Project Project Project6">
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_4_1.jpg"
+                                    alt="Commercial Project #4 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_4_2.jpg"
+                                    alt="Commercial Project #4 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_4_3.jpg"
+                                    alt="Commercial Project #4 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_4_4.jpg"
+                                    alt="Commercial Project #4 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_4_5.jpg"
+                                    alt="Commercial Project #4 - Image #5">
+                            </div>
+
+                        </div>
+
+                        <!-- Residential Project #4 -->
+
+                        <div class="Portfolio-Modal-Project Project Project7">
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_4_1.jpg"
+                                    alt="Residential Project #4 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_4_2.jpg"
+                                    alt="Residential Project #4 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_4_3.jpg"
+                                    alt="Residential Project #4 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_4_4.jpg"
+                                    alt="Residential Project #4 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_4_5.jpg"
+                                    alt="Residential Project #4 - Image #5">
+                            </div>
+
+                        </div>
+
+                        <!-- Commercial Project #5 -->
+
+                        <div class="Portfolio-Modal-Project Project Project8">
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_5_1.jpg"
+                                    alt="Commercial Project #5 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_5_2.jpg"
+                                    alt="Commercial Project #5 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_5_3.jpg"
+                                    alt="Commercial Project #5 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_5_4.jpg"
+                                    alt="Commercial Project #5 - Image #4">
+                            </div>
+
+                        </div>
+
+                        <!-- Residential Project #5 -->
+
+                        <div class="Portfolio-Modal-Project Project Project9">
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_5_1.jpg"
+                                    alt="Residential Project #5 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_5_2.jpg"
+                                    alt="Residential Project #5 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_5_3.jpg"
+                                    alt="Residential Project #5 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_5_4.jpg"
+                                    alt="Residential Project #5 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/residential/p_r_5_5.jpg"
+                                    alt="Residential Project #5 - Image #5">
+                            </div>
+
+                        </div>
+
+                        <!-- Commercial Project #6 -->
+
+                        <div class="Portfolio-Modal-Project Project Project10">
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_6_1.jpg"
+                                    alt="Commercial Project #6 - Image #1">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_6_2.jpg"
+                                    alt="Commercial Project #6 - Image #2">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_6_3.jpg"
+                                    alt="Commercial Project #6 - Image #3">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_6_4.jpg"
+                                    alt="Commercial Project #6 - Image #4">
+                            </div>
+
+                            <div class="fade">
+                                <img src="images/projects/commercial/p_c_6_5.jpg"
+                                    alt="Commercial Project #6 - Image #5">
+                            </div>
+
+                        </div>
+
+                        <div class="FP-Nav FP-Nav-Right" onclick="plusSlides(1)">
+                            <img class="FP-Carousel-Icon" src="images/icon_next.svg" alt="Next Icon">
+                        </div>
+
+                    </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div class="Footer-Container flex">
+
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="Logo">
+                </a>
+
+                <ul>
+
+                    <li class="flex">
+
+                        <span>
+                            <p>T:</p>
+                        </span>
+                        <a href="tel:+919824230086">
+                            <p>+91 98242 30086</p>
+                        </a>
+
+                    </li>
+
+                    <li class="flex">
+
+                        <span>
+                            <p>@:</p>
+                        </span>
+                        <a href="mailto:Design.Decor.Building@gmail.com" target="_blank">
+                            <p>Design.Decor.Building@gmail.com</p>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <div class="copyright">
+
+                    <small>© 2021. All Rights Reserved by Design-Decor-Building</small>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- Consulation Button -->
+
+        <a href="contact.html">
+            <div class="Consulation-Btn flex">
+                <h6>For Consulation</h6>
+                <img src="images/right_arrow.svg" alt=">">
+            </div>
+        </a>
+
+    </div>
+
+    <script src="portfolio.js"></script>
+
+</body>
+
+</html>
