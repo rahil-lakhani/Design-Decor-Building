@@ -160,6 +160,7 @@ nav .Logo-Text {
 
 .ImageSlider-Container img {
     height: 700px;
+    object-fit: cover;
     width: 100%;
 }
 
@@ -788,6 +789,7 @@ footer a:hover {
 
 .Business-Deal-Image img {
     height: 100%;
+    object-fit: cover;
     opacity: 0.9;
     width: 100%;
 }
