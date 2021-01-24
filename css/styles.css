@@ -408,18 +408,20 @@ nav .Logo-Text {
     z-index: 10;
 }
 
-.FP-Nav:focus, .FP-Nav:active, .FP-Nav:visited {
-    outline: none;
+.FP-Nav {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .FP-Carousel-Icon {
     height: 30px;
     transition: all 300ms ease;
     width: 15px;
-}
-
-.FP-Carousel-Icon:focus, .FP-Carousel-Icon:active, .FP-Carousel-Icon:visited {
-    outline: none;
 }
 
 .FP-Carousel-Icon:hover {
