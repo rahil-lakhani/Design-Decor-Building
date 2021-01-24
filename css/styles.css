@@ -418,6 +418,10 @@ nav .Logo-Text {
     width: 15px;
 }
 
+.FP-Carousel-Icon:focus, .FP-Carousel-Icon:active, .FP-Carousel-Icon:visited {
+    outline: none;
+}
+
 .FP-Carousel-Icon:hover {
     height: 35px;
     width: 16px;
